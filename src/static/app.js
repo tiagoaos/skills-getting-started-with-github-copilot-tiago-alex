@@ -41,10 +41,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
           details.participants.forEach((participant) => {
             const listItem = document.createElement("li");
+            const participantRow = document.createElement("div");
+            participantRow.className = "participant-row";
 
             const participantName = document.createElement("span");
             participantName.textContent = participant;
-            listItem.appendChild(participantName);
+            participantRow.appendChild(participantName);
 
             const removeButton = document.createElement("button");
             removeButton.type = "button";
@@ -62,7 +64,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 <path d="M14 11v6" />
               </svg>
             `;
-            listItem.appendChild(removeButton);
+            participantRow.appendChild(removeButton);
+            listItem.appendChild(participantRow);
 
             participantsList.appendChild(listItem);
           });

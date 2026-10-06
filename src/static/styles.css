@@ -87,30 +87,29 @@ section h3 {
 }
 
 .participant-list {
-  padding: 0;
-  list-style: none;
+  padding-left: 1.25rem;
+  list-style: disc;
   color: #596575;
 }
 
 .participant-list li {
-  display: grid;
-  grid-template-columns: 8px minmax(0, 1fr) 32px;
-  align-items: center;
-  gap: 10px;
   padding: 5px 0;
   border-bottom: 1px solid #edf0f2;
+}
+
+.participant-list li::marker {
+  color: #16806a;
 }
 
 .participant-list li:last-child {
   border-bottom: 0;
 }
 
-.participant-list li::before {
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background-color: #16806a;
-  content: "";
+.participant-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 32px;
+  align-items: center;
+  gap: 10px;
 }
 
 .participant-list li span {

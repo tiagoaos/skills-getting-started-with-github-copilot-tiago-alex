@@ -86,22 +86,22 @@ section h3 {
   font-size: 0.95rem;
 }
 
-.participant-list {
+.participants-list {
   padding-left: 1.25rem;
   list-style: disc;
   color: #596575;
 }
 
-.participant-list li {
+.participants-list li {
   padding: 5px 0;
   border-bottom: 1px solid #edf0f2;
 }
 
-.participant-list li::marker {
+.participants-list li::marker {
   color: #16806a;
 }
 
-.participant-list li:last-child {
+.participants-list li:last-child {
   border-bottom: 0;
 }
 
@@ -112,12 +112,12 @@ section h3 {
   gap: 10px;
 }
 
-.participant-list li span {
+.participants-list li span {
   min-width: 0;
   overflow-wrap: anywhere;
 }
 
-.participant-list li,
+.participants-list li,
 .participants-empty {
   margin-bottom: 4px;
   overflow-wrap: anywhere;
